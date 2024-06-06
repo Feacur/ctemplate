@@ -1,0 +1,12 @@
+-ferror-limit=0
+-Werror
+-Wall
+
+-std=c99
+-m64
+
+-DBUILD_TYPE=BUILD_TYPE_CONSOLE
+-DBUILD_OPT=BUILD_OPT_DEVELOP
+
+-I../code
+-I../data
