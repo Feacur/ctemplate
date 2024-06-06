@@ -1,0 +1,22 @@
+#if !defined (CTMP_PROJECT)
+#define CTMP_PROJECT
+
+#define BUILD_TYPE_DEFAULT 0
+#define BUILD_TYPE_CONSOLE 1
+#define BUILD_TYPE_WINDOWS 2
+#define BUILD_TYPE_DYNAMIC 3
+
+#define BUILD_OPT_DEFAULT 0
+#define BUILD_OPT_INSPECT 1
+#define BUILD_OPT_DEVELOP 2
+#define BUILD_OPT_RELEASE 3
+
+#if !defined(BUILD_TYPE)
+# define BUILD_TYPE BUILD_TYPE_DEFAULT
+#endif
+
+#if !defined(BUILD_OPT)
+# define BUILD_OPT BUILD_OPT_DEFAULT
+#endif
+
+#endif
