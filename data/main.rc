@@ -1,0 +1,6 @@
+// https://learn.microsoft.com/windows/win32/menurc/resource-compiler
+
+#include <Windows.h>
+
+ico                                ICON        "main.ico"
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "main.manifest"
