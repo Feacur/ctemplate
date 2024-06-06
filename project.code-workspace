@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"path": "code",
+		},
+		{
+			"path": "data",
+		},
+		{
+			"path": "build",
+		},
+		{
+			"path": ".",
+			"name": "/",
+		},
+	],
+	"settings": {
+		"files.exclude": {
+			"./.git": true,
+			"./code": true,
+			"./data": true,
+			"./build": true,
+		},
+		"editor.insertSpaces": false,
+		"clangd.arguments": [
+			"--compile-commands-dir=${workspaceFolder}/data",
+			"--header-insertion=never",
+		],
+	},
+	"extensions": {
+		"recommendations": [
+			"vadimcn.vscode-lldb",
+			"llvm-vs-code-extensions.vscode-clangd",
+		],
+	},
+}

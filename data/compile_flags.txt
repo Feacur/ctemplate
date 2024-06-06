@@ -1,0 +1,8 @@
+-ferror-limit=0
+
+-Werror
+-Wall
+
+-DBUILD_DEBUG=1
+
+-I"../code"
