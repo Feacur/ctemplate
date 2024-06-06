@@ -1,0 +1,11 @@
+* text=auto
+
+*.json text
+*.bat  text
+*.txt  text
+*.h    text
+*.c    text
+*.md   text
+
+/*.code-workspace  text
+/*.sublime-project text
