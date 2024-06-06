@@ -1,0 +1,43 @@
+{
+	"version": "2.0.0",
+	"presentation": {
+		"reveal": "silent",
+		"revealProblems": "never",
+		"panel": "dedicated",
+		"clear": true,
+	},
+	"type": "shell",
+	"options": {"cwd": "."},
+	"tasks": [
+		{
+			"label": "Build",
+			"group": "build",
+			"command": "build.bat",
+			"args": [
+				"toolset:clang",
+				"CRT:dynamic",
+				"type:console",
+				"optimize:inspect",
+				"arch:64",
+				"WAE",
+			],
+			"problemMatcher": {
+				"owner": "c",
+				"fileLocation": ["autoDetect", "${workspaceFolder}"],
+				"pattern": {
+					// between "^start" and "end$" tokens:
+					// path:line:column: type: message[ code in square braces][spaces]
+					// ^(.+):(\d+):(\d+): (error|warning|note): ([^\[]+)( \[.*\])?(?: +|)$
+					"regexp": "^(.+):(\\d+):(\\d+): (error|warning|note): ([^\\[]+)( \\[.*\\])?( +|)$",
+					"file": 1,
+					"line": 2,
+					"column": 3,
+					"severity": 4,
+					"message": 5,
+					"code": 6,
+					
+				},
+			},
+		},
+	],
+}
